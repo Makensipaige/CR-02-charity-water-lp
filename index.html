@@ -113,6 +113,65 @@
       text-align: center;
       padding: 20px;
     }
+
+    /* Additional styles for the new sections */
+    .impact-story {
+      background: #fff;
+      color: #333;
+      padding: 50px 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .impact-story h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .impact-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .impact-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .call-to-action {
+      background: #ffeb3b;
+      color: #222;
+      padding: 50px 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .call-to-action h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .donate-button {
+      display: inline-block;
+      padding: 12px 25px;
+      border: none;
+      background: #222;
+      color: #ffeb3b;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .donate-button:hover {
+      background: #ffeb3b;
+      color: black;
+    }
   </style>
 </head>
 <body>
@@ -139,6 +198,26 @@
     <h2>About Us</h2>
     <p>We bring clean and safe drinking water to people in developing countries. Your support directly funds sustainable water solutions and transforms communities.</p>
   </main>
+
+  <!-- Impact Story Section: Shows a real-world story with an image -->
+  <section class="impact-story">
+    <h2>Real Impact: Meet Amina</h2>
+    <div class="impact-content">
+      <!-- Impact image -->
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
+      <!-- Impact story text -->
+      <p>
+        Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
+      </p>
+    </div>
+  </section>
+
+  <!-- Donation Section: Encourages visitors to donate -->
+  <section class="call-to-action">
+    <h2>Make a Difference</h2>
+    <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
+    <a href="#donate" class="donate-button">Donate Now</a>
+  </section>
 
   <footer>
     <p>&copy; 2025 Charity Water Supporter | All Rights Reserved</p>

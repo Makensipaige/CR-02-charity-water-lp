@@ -131,45 +131,84 @@ h2 {
   color: #FFC907; /* Yellow heading in story section */
 }
 
+/* Impact Story Section Styles */
+/* This section tells a real-world story with an image and text */
+.impact-story {
+  background: #fff; /* White background for clarity */
+  color: #222;      /* Dark text for easy reading */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07);
+  margin: 24px 10px;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+/* Layout for image and text in the impact story */
+.impact-content {
+  display: flex;
+  flex-direction: column; /* Stack on small screens */
+  align-items: center;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+/* Impact story image style */
+.impact-image {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+}
+
+/* Responsive: side by side on larger screens */
+@media (min-width: 601px) {
+  .impact-content {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    max-width: 800px;
+    margin: 16px auto 0 auto;
+  }
+  .impact-image {
+    width: 300px;
+    margin-bottom: 0;
+  }
+}
+
 /* Call-to-Action Section Styles */
 .call-to-action {
   background-color: #FFC907; /* Yellow background for call to action */
   color: #222; /* Dark text for readability */
   text-align: center;
   padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07);
+  margin: 24px 10px;
 }
 
-/* Style the impact story image */
-.impact-image {
-  width: 100%;
-  max-width: 320px;
-  border-radius: 10px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10); /* Soft blue shadow */
-}
-
-/* Donate Button Styles */
+/* Bold Donate Now button */
 .donate-button {
   display: inline-block;
   background-color: #2E9DF7; /* Blue button */
   color: #fff;
-  padding: 14px 32px;
+  padding: 16px 36px;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-top: 18px;
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
-  transition: background 0.3s, transform 0.2s;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
   border: none;
   cursor: pointer;
 }
 
-/* Change button color when hovered */
+/* When hovered, make the button blue (#2E9DF7) and text white */
 .donate-button:hover {
-  background-color: #FFC907; /* Yellow on hover */
-  color: #222; /* Dark text on yellow */
-  transform: translateY(-2px) scale(1.04); /* Slight lift */
+  background-color: #2E9DF7;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
 }
 
 /* Add some spacing between sections */
@@ -182,54 +221,4 @@ section {
   These styles help the site look good on phones and computers.
 */
 @media (max-width: 600px) {
-  /* Make hero section padding smaller on small screens */
-  .hero {
-    padding: 32px 8px;
-    font-size: 1em;
-  }
-
-  /* Make headline font size smaller so it fits on small screens */
-  .hero h1 {
-    font-size: 1.4em;
-  }
-
-  /* Make subheadline font size smaller */
-  .hero p {
-    font-size: 1em;
-  }
-
-  /* Make story and call-to-action sections have less padding */
-  .story,
-  .call-to-action,
-  .donation-section {
-    padding: 14px 8px;
-  }
-
-  /* Make impact story image smaller and stack above the text */
-  .impact-content {
-    display: block; /* Stack items vertically */
-    text-align: center;
-  }
-
-  .impact-image {
-    width: 90%;    /* Make image take up most of the width */
-    max-width: 220px;
-  }
-}
-
-@media (min-width: 601px) {
-  /* Show image and text side by side in the impact story */
-  .impact-content {
-    display: flex;           /* Place items in a row */
-    align-items: center;     /* Vertically center items */
-    justify-content: center; /* Center the whole group */
-    gap: 28px;               /* Space between image and text */
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .impact-image {
-    width: 300px;
-  }
-}
+  /* Make hero section padding
