@@ -6,7 +6,12 @@
 
 /* Set up the main font and background color for the whole page */
 body {
-  background-color: #fff; /* White background for a clean look */
+  /* Set the background image for the whole page */
+  background-image: url('./img/7836_Ethiopia_2019_CG--2.jpg');
+  background-size: cover;      /* Make the image cover the whole screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;/* Do not repeat the image */
+  background-attachment: fixed;/* Keep the image fixed during scroll */
   font-family: 'Avenir', Arial, Helvetica, sans-serif; /* Friendly and simple font */
   margin: 0;
   padding: 0;
