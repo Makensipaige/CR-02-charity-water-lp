@@ -68,7 +68,7 @@ nav a {
 
 /* Make the logo image the same height as the nav links (about 1.25rem) */
 .logo-img {
-  height: 1.5em; /* Match nav link font size (1.25rem) plus a little extra for balance */
+  height: 2.7em; /* Match nav link font size (1.25rem) plus a little extra for balance */
   width: auto;
   vertical-align: middle;
   margin-right: 8px;
