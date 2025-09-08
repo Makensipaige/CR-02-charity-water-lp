@@ -46,23 +46,32 @@ header {
   height: 80px; /* Give header a fixed height for vertical centering */
 }
 
-/* Center the navigation links in the header and make them bigger */
+/* Center the navigation links horizontally in the header */
 .nav-center {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px; /* More space between links */
+  gap: 32px;
+  margin: 0 auto;
 }
 
-/* Make nav links bigger and remove margin for centering */
+/* Remove left margin from nav links for better centering */
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.25rem; /* Slightly bigger text */
+  font-size: 1.25rem;
   padding: 0 10px;
-  /* margin-left removed for centering */
+  margin-left: 0;
   transition: color 0.2s;
+}
+
+/* Make the logo image the same height as the nav links (about 1.25rem) */
+.logo-img {
+  height: 1.5em; /* Match nav link font size (1.25rem) plus a little extra for balance */
+  width: auto;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 /* Hero Section Styles */
@@ -71,17 +80,17 @@ nav a {
    centers the text, and makes the section stand out.
 */
 .hero {
-/* Use the new background image for the hero section */
-background-image: url('img/7836_Ethiopia_2019_CG--2.jpg');
-background-size: cover;      /* Make the image cover the whole area */
-  background-position: center; /* Center the image */
+  /* Use the new background image for the hero section */
+  background-image: url('img/7836_Ethiopia_2019_CG-.jpg');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  color: #fff;                 /* White text for contrast */
-  text-align: center;          /* Center the headline and subheadline */
-  padding: 60px 20px;          /* Space above and below the text */
-  border-radius: 0 0 16px 16px; /* Only round bottom corners */
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 0 0 16px 16px;
   background-blend-mode: darken;
-  background-color: rgba(46, 157, 247, 0.45); /* Blue overlay for readability */
+  background-color: rgba(46, 157, 247, 0.45);
 }
 
 /* Center the content and let it fill a bit more of the page */
@@ -221,4 +230,15 @@ section {
   These styles help the site look good on phones and computers.
 */
 @media (max-width: 600px) {
-  /* Make hero section padding
+  /* Make hero section padding smaller on small screens */
+  .hero {
+    padding: 30px 10px;
+  }
+  .hero-content {
+    padding: 20px 8px;
+  }
+  section {
+    padding: 16px 8px;
+    margin: 16px 4px;
+  }
+}
