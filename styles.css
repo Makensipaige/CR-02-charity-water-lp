@@ -22,15 +22,53 @@ section {
   padding: 24px 16px;
 }
 
+/* Header Styles */
+/* 
+   The header is fixed at the top, with a dark background 
+   and centered navigation links.
+*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center everything horizontally */
+  padding: 10px 40px;
+  z-index: 1000;
+  height: 80px; /* Give header a fixed height for vertical centering */
+}
+
+/* Center the navigation links in the header and make them bigger */
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px; /* More space between links */
+}
+
+/* Make nav links bigger and remove margin for centering */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem; /* Slightly bigger text */
+  padding: 0 10px;
+  /* margin-left removed for centering */
+  transition: color 0.2s;
+}
+
 /* Hero Section Styles */
 /* 
    The hero section uses a background image, 
    centers the text, and makes the section stand out.
 */
 .hero {
-  /* Use a background image that covers the whole section */
-  background-image: url('img/7836_Ethipia_2019_CG--2.jpg');
-  background-size: cover;      /* Make the image cover the whole area */
+/* Use the new background image for the hero section */
+background-image: url('img/7836_Ethiopia_2019_CG--2.jpg');
+background-size: cover;      /* Make the image cover the whole area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
   color: #fff;                 /* White text for contrast */
