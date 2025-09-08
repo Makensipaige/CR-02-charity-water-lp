@@ -164,7 +164,9 @@ h2 {
 /* Impact story image style */
 .impact-image {
   width: 100%;
-  max-width: 320px;
+  max-width: 400px;   /* Make the image 400px */
+  height: 400px;      /* Make the image square */
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 8px;
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
@@ -180,7 +182,8 @@ h2 {
     margin: 16px auto 0 auto;
   }
   .impact-image {
-    width: 300px;
+    width: 400px;
+    height: 400px;    /* Keep square and 400px on large screens */
     margin-bottom: 0;
   }
 }
